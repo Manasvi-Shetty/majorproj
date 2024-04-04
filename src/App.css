@@ -1,0 +1,23 @@
+.mainBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainBox h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fishCard{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnbox{
+  display: flex;
+  justify-content: center;
+}
+.succesBtn{
+  margin-left: 0.3rem;
+}
