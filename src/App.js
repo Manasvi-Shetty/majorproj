@@ -23,7 +23,7 @@ const ImageUpload = () => {
   return (
     <>
       <div className="mainBox"> 
-        <h1>Fwish App</h1>
+
         <Card className="fishCard" style={{ width: "60%" }}>
           <div>
             <img
@@ -32,12 +32,13 @@ const ImageUpload = () => {
                 maxWidth: "300px",
                 maxHeight: "300px",
                 marginBottom: "20px",
+                marginTop: "10px",
               }}
               alt="ImagePreview"
             />
             <br />
           </div>
-          <Card.Title>Insert your fish image to get amazing results</Card.Title>
+          <Card.Title>Insert your fish image to detect diseases</Card.Title>
           {/* <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -53,7 +54,7 @@ const ImageUpload = () => {
                 fontSize: "16px",
               }}
             >
-              Upload 🐡
+              Upload Fish
               <Button
                
                 as="input"
@@ -63,7 +64,7 @@ const ImageUpload = () => {
                 onChange={handleImageChange}
               />
             </label>
-            <Button className="succesBtn" variant="success">Get Result 😁</Button>{" "}
+            <Button className="succesBtn" variant="success">Get Result</Button>{" "}
           </div>
         </Card>
       </div>
