@@ -24,7 +24,11 @@ const ImageUpload = () => {
     <>
       <div className="mainBox"> 
 
-        <Card className="fishCard" style={{ width: "60%" }}>
+        <Card className="fishCard" 
+        style={{
+           width: "50%",
+           height: "500px" ,
+           marginTop: "6rem"}}>
           <div>
             <img
               src={imagePreview}
@@ -33,6 +37,8 @@ const ImageUpload = () => {
                 maxHeight: "300px",
                 marginBottom: "20px",
                 marginTop: "10px",
+                border: "2px solid black",
+                borderRadius: "5px"
               }}
               alt="ImagePreview"
             />
@@ -48,13 +54,13 @@ const ImageUpload = () => {
               style={{
                 cursor: "pointer",
                 padding: "10px 15px",
-                backgroundColor: "#3498db",
-                color: "white",
+                color: "black",
+                border: "3px solid blue",
                 borderRadius: "5px",
                 fontSize: "16px",
               }}
             >
-              Upload Fish
+              Upload
               <Button
                
                 as="input"
@@ -64,7 +70,29 @@ const ImageUpload = () => {
                 onChange={handleImageChange}
               />
             </label>
-            <Button className="succesBtn" variant="success">Get Result</Button>{" "}
+
+            <label
+              style={{
+                cursor: "pointer",
+                padding: "10px 15px",
+                color: "white",
+                background: "green",
+                borderRadius: "5px",
+                fontSize: "16px",
+                marginLeft: "10px"
+              }}
+            >
+             Get result
+              <Button
+               
+                as="input"
+                type="file"
+                style={{ display: "none" }}
+                accept="image/*"
+                onChange={handleImageChange}
+              />
+            </label>
+            {/* <Button className="succesBtn" variant="success"> Get Result</Button>{" "} */}
           </div>
         </Card>
       </div>
