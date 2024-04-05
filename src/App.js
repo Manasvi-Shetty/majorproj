@@ -84,12 +84,8 @@ const ImageUpload = () => {
             >
              Get result
               <Button
-               
-                as="input"
-                type="file"
                 style={{ display: "none" }}
-                accept="image/*"
-                onChange={handleImageChange}
+
               />
             </label>
             {/* <Button className="succesBtn" variant="success"> Get Result</Button>{" "} */}
