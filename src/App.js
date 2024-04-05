@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import './App.css'
 
 const ImageUpload = () => {
-  const [imagePreview, setImagePreview] = useState("logo192.png");
+  const [imagePreview, setImagePreview] = useState("image1.png");
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -26,7 +26,7 @@ const ImageUpload = () => {
 
         <Card className="fishCard" 
         style={{
-           width: "50%",
+           width: "40%",
            height: "500px" ,
            marginTop: "6rem"}}>
           <div>
@@ -37,7 +37,7 @@ const ImageUpload = () => {
                 maxHeight: "300px",
                 marginBottom: "20px",
                 marginTop: "10px",
-                border: "2px solid black",
+                border: "2px solid grey",
                 borderRadius: "5px"
               }}
               alt="ImagePreview"
